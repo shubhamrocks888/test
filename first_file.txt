@@ -1,0 +1,52 @@
+$ touch xyz.py
+
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        xyz.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+$ git add xyz.py
+
+$ git log
+commit f72bfca569b9e6663f18004ff4321529fdb12fd9 (HEAD -> master)
+Author: Shubham Jain <shubhamrocks888@gmail.com>
+Date:   Mon Sep 7 11:14:33 2020 +0530
+
+    Completed subtract function
+
+
+$ git commit --amend
+hint: Waiting for your editor to close the file...       0 [sig] bash 702! sigpacket::process: Suppressing signal 18 to win32 process (pid 7296)
+[master b12dfef] Completed subtract function
+ Date: Mon Sep 7 11:14:33 2020 +0530
+ 2 files changed, 3 insertions(+)
+ create mode 100644 xyz.py
+
+#NOTE:	When will you type command--> git commit --amend
+	the unix editor will open:
+1. 	Press : (this will let you at the bottom of editor)
+2.	type ->q! (close the editor without changes)	
+	"OR"
+	type ->wq (close the editor with changes)
+
+#Note:	To close the file in a terminal --> Just press q
+
+
+$ git log --stat
+commit b12dfefb1f8fb512b2aba7d3125d56ef65ddddaf (HEAD -> master)
+Author: Shubham Jain <shubhamrocks888@gmail.com>
+Date:   Mon Sep 7 11:14:33 2020 +0530
+
+    Completed subtract function
+
+ demoo.py | 3 +++
+ xyz.py   | 0
+ 2 files changed, 3 insertions(+)
+  
+	
